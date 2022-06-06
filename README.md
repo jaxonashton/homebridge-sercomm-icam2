@@ -37,7 +37,7 @@
 ### Dependencies
 
 * [Homebridge](https://homebridge.io)
-* @Sunoo's [Camera FFmpeg plugin](https://github.com/Sunoo/homebridge-camera-ffmpeg#readme) for Homebridge
+* Sunoo's [Camera FFmpeg plugin](https://github.com/Sunoo/homebridge-camera-ffmpeg#readme) for Homebridge
 * A [Sercomm iCamera 2](https://user-images.githubusercontent.com/3246415/172081973-eeb4af69-61e9-4e49-ac70-6ebbaef80674.jpg) (aka 2nd Gen Xfinity Home Camera)
 * Patience
 
@@ -75,7 +75,7 @@ The first stop on getting the iCamera 2 set up for Homebridge integration is per
 
 3. The video source should always start with `-rtsp_transport tcp -i`, followed by the URL of the camera in the format of `rtsp://administrator@[CAMERA_IP]:[PORT_NUMBER]/img/media.sav`. This will call to the camera and force streaming over TCP to be then handled by the FFmpeg plugin.
 
-3. Leave the "Still Image Source" blank. I originally thought that this had to be filled in based on the very detailed technical dive provided by @edent in their [Sercomm-API](https://github.com/edent/Sercomm-API) repo, however, as it turns out leaving it blank is the way to go since will pull a snapshot from the live feed every 15-30 seconds.
+3. Leave the "Still Image Source" blank. I originally thought that this had to be filled in based on the very detailed technical dive provided by edent in their [Sercomm-API](https://github.com/edent/Sercomm-API) repo, however, as it turns out leaving it blank is the way to go since will pull a snapshot from the live feed every 15-30 seconds.
 
 4. Make sure **Enable Audio** and **Unbridge Camera** are both checked.
 
@@ -110,6 +110,6 @@ The first stop on getting the iCamera 2 set up for Homebridge integration is per
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* @edent's [Sercomm Camera API](https://github.com/edent/Sercomm-API) documentation
-* @Sunoo's [Homebridge Camera FFmpeg plugin](https://github.com/Sunoo/homebridge-camera-ffmpeg#readme)
+* edent's [Sercomm Camera API](https://github.com/edent/Sercomm-API) documentation
+* Sunoo's [Homebridge Camera FFmpeg plugin](https://github.com/Sunoo/homebridge-camera-ffmpeg#readme)
 
