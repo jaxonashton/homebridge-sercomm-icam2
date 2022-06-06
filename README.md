@@ -58,13 +58,13 @@ The first stop on getting the iCamera 2 set up for Homebridge integration is per
 ### Homebridge Config
 
     {
-        "name": "<Camera Location Name>",
+        "name": "[CAMERA_LOCATION_NAME]",
         "manufacturer": "Sercomm",
         "model": "iCamera2",
         "serialNumber": "[CAMERA_SERIAL_HERE]",
         "videoConfig": {
             "source": "-i rtsp://administrator@[CAMERA_IP]:554/img/media.sav",
-            "stillImageSource": "[LEAVE THIS BLANK]",
+            "stillImageSource": "[LEAVE_THIS_BLANK]",
             "audio": true
         }
     }
