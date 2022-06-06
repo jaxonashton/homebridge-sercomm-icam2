@@ -10,7 +10,7 @@
 
 <div align="center">
 
-<a href="https://homebridge.io"><img alt="Works with Homebridge" src="https://img.shields.io/badge/Works%20with-Homebridge-blue?style=for-the-badge"></a>
+<a href="https://homebridge.io"><img alt="Works with Homebridge" src="https://img.shields.io/badge/Works%20with-Homebridge-%23965DE1?style=for-the-badge"></a>
 <a href="#"><img alt="Project status" src="https://img.shields.io/badge/Status-Active-blue?style=for-the-badge"></a>
 
 <a href="https://github.com/Falc0n2k/speedtest-dashboard/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/falc0n2k/speedtest-dashboard?style=for-the-badge"></a>
