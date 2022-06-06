@@ -48,7 +48,7 @@ If you had Xfinity Home at one time but no longer do, you might be surprised to 
 
 This tutorial should take some of the pain out of re-purposing these otherwise solid cameras. Be mindful though: you're not going to get HD quality picure on these things, as the max resolution is 1280 x 720 (720p), and there's no ability to record the feed. However, all other functionality like night mode should still work.
 
-Caution: If you're looking for a way to get your *working* Xfinity Home system integrated within HomeKit, check out the [Homebridge-XfinityHome](https://github.com/bloomkd46/homebridge-XfinityHome) by @bloomkd46. It's an excellent option to gain XH access within the HomeKit app, allowing you to ditch Xfinity's Home app. and keep everything in one place.
+> **⚠️ Caution: If you're looking for a way to get your *existing* Xfinity Home system integrated within HomeKit, check out the [Homebridge-XfinityHome](https://github.com/bloomkd46/homebridge-XfinityHome) by @bloomkd46. It's an excellent option to gain XH access within the HomeKit app, allowing you to ditch Xfinity's Home app. and keep everything in one place. Features may vary.**
 
 ### Prerequisites
 
