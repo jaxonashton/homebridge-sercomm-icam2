@@ -81,7 +81,7 @@ The first stop on getting the iCamera 2 set up for Homebridge integration is per
 
    At this point, your screen should look something similar to this:
 
-   [SCREENSHOT HERE]
+   ![Screenshot at Jun 05 21-43-58](https://user-images.githubusercontent.com/3246415/172081455-86926f9c-9b6c-43d7-9095-9a5a905f4770.png)
 
 5. The following options are just that -- optional. They do not impact the functionality of the camera, but they sure make it easier to troubleshoot especially if you have more than one iCam.
 
@@ -92,7 +92,7 @@ The first stop on getting the iCamera 2 set up for Homebridge integration is per
     3. Serial Number: `can be found at XYZ`
     4. Firmware Revision: `leave blank`
 
-    [SCREENSHOT HERE]
+    ![Screenshot at Jun 05 21-44-33](https://user-images.githubusercontent.com/3246415/172081476-cb7bac7f-5b41-49c2-86ce-5fc2597fc5c2.png)
 
     **Video Output**
 
@@ -103,7 +103,7 @@ The first stop on getting the iCamera 2 set up for Homebridge integration is per
     5. Maximum Bitrate: `299`
     6. Force Maxmiums: `leave unchecked`
 
-    [SCREENSHOT HERE]
+    ![Screenshot at Jun 05 21-44-59](https://user-images.githubusercontent.com/3246415/172081491-1a69bb42-30fc-4df1-b8f8-f3e201d62663.png)
 
 6. I do not recommend playing with any of the options in the "EXPERIMENTAL - WIP" section as you can really mess up your setup.
 
