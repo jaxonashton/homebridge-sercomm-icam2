@@ -38,7 +38,7 @@
 
 * [Homebridge](https://homebridge.io)
 * @Sunoo's [Camera FFmpeg plugin](https://github.com/Sunoo/homebridge-camera-ffmpeg#readme) for Homebridge
-* A Sercomm iCamera 2 (aka 2nd Gen Xfinity Home Camera)
+* A [Sercomm iCamera 2](https://user-images.githubusercontent.com/3246415/172081973-eeb4af69-61e9-4e49-ac70-6ebbaef80674.jpg) (aka 2nd Gen Xfinity Home Camera)
 * Patience
 
 
