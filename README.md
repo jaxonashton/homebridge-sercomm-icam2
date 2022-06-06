@@ -12,7 +12,6 @@
 
 <a href="https://homebridge.io"><img alt="Works with Homebridge" src="https://img.shields.io/badge/Works%20with-Homebridge-blue?style=for-the-badge"></a>
 <a href="#"><img alt="Project status" src="https://img.shields.io/badge/Status-Active-blue?style=for-the-badge"></a>
-<a href="https://github.com/Falc0n2k/speedtest-dashboard/blob/main/LICENSE.txt"><img alt="GitHub" src="https://img.shields.io/github/license/falc0n2k/speedtest-dashboard?style=for-the-badge"></a>
 
 <a href="https://github.com/Falc0n2k/speedtest-dashboard/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/falc0n2k/speedtest-dashboard?style=for-the-badge"></a>
 <a href="https://github.com/Falc0n2k/speedtest-dashboard/network/members"><img alt="GitHub forks" src="https://img.shields.io/github/forks/falc0n2k/speedtest-dashboard?style=for-the-badge"></a>
@@ -33,11 +32,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="/images/dashboard.png" width="75%" height="75%">
-
-### Built With
-
-* [JSON](https://www.json.org/)
+![Screenshot at Jun 05 20-58-35](https://user-images.githubusercontent.com/3246415/172081290-616ea0fc-635e-48bf-a955-8b76bb14c110.png)
 
 ### Dependencies
 
@@ -66,27 +61,51 @@ The first stop on getting the iCamera 2 set up for Homebridge integration is per
         "name": "<Camera Location Name>",
         "manufacturer": "Sercomm",
         "model": "iCamera2",
-        "serialNumber": "[CAMERA SERIAL HERE]",
+        "serialNumber": "[CAMERA_SERIAL_HERE]",
         "videoConfig": {
-            "source": "-i rtsp://administrator@[CAMERA-IP]:554/img/media.sav",
-            "stillImageSource": "[LEAVE BLANK]",
+            "source": "-i rtsp://administrator@[CAMERA_IP]:554/img/media.sav",
+            "stillImageSource": "[LEAVE THIS BLANK]",
             "audio": true
         }
     }
 
 1. In Homebridge, click **Plugins** in the top menu. Locate the Homebridge Camera FFmpeg plugin and click **Settings**.
 
-2. Name your camera whatever you'd like, but remember that the name you choose is what it will appear as within HomeKit. I named my outdoor camera "Balcony".
+2. Start by naming your camera whatever you'd like, but remember that the name you choose is what it will appear as within HomeKit. I named my outdoor camera "Balcony".
 
 3. The video source should always start with `-rtsp_transport tcp -i`, followed by the URL of the camera in the format of `rtsp://administrator@[CAMERA_IP]:[PORT_NUMBER]/img/media.sav`. This will call to the camera and force streaming over TCP to be then handled by the FFmpeg plugin.
 
 3. Leave the "Still Image Source" blank. I originally thought that this had to be filled in based on the very detailed technical dive provided by @edent in their [Sercomm-API](https://github.com/edent/Sercomm-API) repo, however, as it turns out leaving it blank is the way to go since will pull a snapshot from the live feed every 15-30 seconds.
 
-4. 
+4. Make sure **Enable Audio** and **Unbridge Camera** are both checked.
 
+   At this point, your screen should look something similar to this:
 
+   [SCREENSHOT HERE]
 
+5. The following options are just that -- optional. They do not impact the functionality of the camera, but they sure make it easier to troubleshoot especially if you have more than one iCam.
 
+    **Branding Options**
+
+    1. Manufacturer: `Sercomm`
+    2. Model: `iCamera2`
+    3. Serial Number: `can be found at XYZ`
+    4. Firmware Revision: `leave blank`
+
+    [SCREENSHOT HERE]
+
+    **Video Output**
+
+    1. Maximum Concurrent Streams: `2`
+    2. Maximum Width: `0`
+    3. Maximum Height: `0`
+    4. Maximum Framerate: `30`
+    5. Maximum Bitrate: `299`
+    6. Force Maxmiums: `leave unchecked`
+
+    [SCREENSHOT HERE]
+
+6. I do not recommend playing with any of the options in the "EXPERIMENTAL - WIP" section as you can really mess up your setup.
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
