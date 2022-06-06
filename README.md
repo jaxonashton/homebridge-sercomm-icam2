@@ -53,7 +53,7 @@ Caution: If you're looking for a way to get your *working* Xfinity Home system i
 
 ### Prerequisites
 
-The first stop on getting the iCamera 2 set up for Homebridge integration is performing a factory reset on the device and manually tweaking some settings. Don't worry though, it's scarier than it sounds. You can read all about this process over on the [dependency primer](#).
+The first stop on getting the iCamera 2 set up for Homebridge integration is performing a factory reset on the device and manually tweaking some settings. Don't worry though, it's scarier than it sounds. You can read all about this process over on the [dependency primer](https://github.com/Falc0n2k/Homebridge-Sercomm-iCamera2/wiki/Dependency-Primer).
 
 ### Homebridge Config
 
